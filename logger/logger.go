@@ -25,7 +25,6 @@ func Error(message string, err ...error) {
 func Warning(message string, details ...string) {
 	msg := alert.Warning(message, details...)
 	fmt.Print(msg)
-	os.Exit(1)
 }
 
 // Info prints an information message without exit.
